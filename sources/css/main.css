@@ -5,6 +5,7 @@ body {
 	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+/* region Blocks styles*/
 .block {
 	display: inline-block;
 }
@@ -12,6 +13,10 @@ body {
 .textBlock {
 	background-color: #efe9e5;
 	padding: 0;
+}
+
+.blueBlock{
+	background-color: #a8cee1;
 }
 
 .blockHeader {
@@ -31,6 +36,10 @@ body {
 	line-height: 22px;
 }
 
+.blueBlock .blockContent{
+	color: #fff;
+}
+
 .video {
 	display: block;
 	padding: 0px 20px;
@@ -48,6 +57,59 @@ body {
 	line-height: 36px;
 	padding-right: 12px;
 }
+
+/*Download block*/
+.download{
+	display: block;
+	padding: 0px 20px;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #fff;
+	width: 100%;
+	background-color: #729db3;
+}
+
+.download:after{
+	content: "\e026";
+	font-family: 'Glyphicons Halflings';
+	float: right;
+	line-height: 36px;
+	padding-right: 12px;
+}
+
+
+/*endregion*/
+
+/*region footer*/
+.footer{
+	color: #282828;
+	font-size: 16px;
+}
+
+.footer .social{
+	margin:15px 0;
+	padding: 0;
+}
+
+.footer .privacy a{
+	color: #0096ff;
+	cursor: pointer;
+}
+
+.footer .social li{
+	list-style: none;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin: 5px;
+}
+
+.footer .privacy{
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+/*endregion*/
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
