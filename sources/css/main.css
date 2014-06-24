@@ -5,9 +5,22 @@ body {
 	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+.noPadding{
+	padding-right: 0;
+	padding-left: 0;
+}
+
 /* region Blocks styles*/
 .block {
 	display: inline-block;
+	padding-right: 0;
+	padding-left: 0;
+	overflow: hidden;
+}
+
+.block img{
+	height: 100%;
+	width: 100%;
 }
 
 .textBlock {
@@ -32,12 +45,14 @@ body {
 	padding: 0 20px;
 	font-size: 17px;
 	color: #717073;
-	margin: 36px 0;
+	margin: 36px 0 78px;
 	line-height: 22px;
 }
 
 .blueBlock .blockContent{
 	color: #fff;
+	padding: 0 15px;
+	margin: 32px 0 74px;
 }
 
 .video {
@@ -48,33 +63,40 @@ body {
 	color: #efe9e5;
 	width: 100%;
 	background-color: #033151;
+	position: absolute;
+	bottom: 0;
+	height: 35px;
+	line-height: normal;
 }
 
 .video:after {
 	content: "\e029";
 	font-family: 'Glyphicons Halflings';
 	float: right;
-	line-height: 36px;
-	padding-right: 12px;
+	line-height: 30px;
 }
 
 /*Download block*/
 .download{
+	height: 35px;
 	display: block;
-	padding: 0px 20px;
-	font-size: 30px;
+	padding: 0px 10px;
+	font-size: 24px;
 	text-transform: uppercase;
 	color: #fff;
 	width: 100%;
 	background-color: #729db3;
+	position: absolute;
+	bottom: 0;
+	line-height: 35px;
 }
 
 .download:after{
 	content: "\e026";
 	font-family: 'Glyphicons Halflings';
 	float: right;
-	line-height: 36px;
-	padding-right: 12px;
+	font-size: 30px;
+	line-height: 30px;
 }
 
 
@@ -111,13 +133,54 @@ body {
 }
 
 /*endregion*/
+@media (max-width: 480px) {
+	.small .download{
+		padding: 0px 2px;
+		font-size: 20px;
+	}
+
+	.blockContent{
+		margin: 24px 0 70px;
+	}
+
+	.small .blockContent{
+		padding: 0 10px;
+		margin: 10px 0 74px;
+		line-height: 20px;
+	}
+
+    .blockHeader{
+		font-size: 30px;
+    }
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+	.small .download{
+		padding: 0 1px;
+		font-size: 15px;
+	}
+
+	.small .blockContent{
+		padding: 0 5px;
+		margin: 10px 0 74px;
+		line-height: 20px;
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+    .block.small .blockContent{
+	    padding: 0 10px;
+	    margin: 10px 0 44px;
+	    line-height: 20px;
+    }
+
+    .small .download{
+	    padding: 0 5px;
+	    font-size: 20px;
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
