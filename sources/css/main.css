@@ -2,7 +2,7 @@
 /* No media query since this is the default in Bootstrap */
 
 body {
-	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family: 'Helvetica', Arial, "Lucida Grande", sans-serif;
 }
 
 .block {
@@ -49,12 +49,111 @@ body {
 	padding-right: 12px;
 }
 
+/*region /*Navigation*/
+.navbar.navbar-default {
+	background-color: transparent;
+	border: 0;
+}
+
+.navbar-nav {
+	margin: 0 -15px;
+}
+
+.navbar ul.navbar-nav > li > a,
+.navbar ul.navbar-nav > li.active > a {
+	background-color: #a8cee1;
+	font: normal 16px/14px 'Helvetica';
+	text-transform: uppercase;
+	color: #003151;
+	padding: 15px;
+}
+
+.navbar-brand,
+.navbar-brand > img {
+	padding: 0;
+	height: 44px;
+}
+
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:hover {
+
+	height: 44px;
+	background-color: #a8cee1;
+	border-radius: 0;
+	border: 1px solid #dddddd;
+	margin: 0;
+
+	color: transparent;
+	width: 44px;
+}
+
+.navbar-default .navbar-toggle.collapsed,
+.navbar-default .navbar-toggle.collapsed:hover {
+	float: left;
+	width: auto;
+
+	font: normal 14px/14px 'Helvetica';
+	color: #fff;
+	padding: 15px;
+	text-decoration: none;
+}
+
+.navbar-default .navbar-toggle > span.glyphicon {
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	padding: 15px;
+	color: #fff;
+}
+
+.navbar-default .navbar-toggle.collapsed > span.glyphicon {
+	display: none;
+}
+
+/*endregion*/
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+	/*region /*Navigation*/
+	.navbar.navbar-default {
+		background-color: transparent;
+		border: 0;
+	}
+
+	.navbar .navbar-header,
+	.navbar .navbar-collapse {
+		float: left;
+	}
+
+	.navbar ul.navbar-nav > li > a,
+	.navbar ul.navbar-nav > li.active > a {
+		font-size: 12px;
+		padding: 24px 15px;
+	}
+
+	.navbar > .container .navbar-brand {
+		margin: 0;
+	}
+
+	.navbar-brand,
+	.navbar-brand > img {
+		height: 62px;
+	}
+
+	/*endregion*/
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+	/*region /*Navigation*/
+
+	.navbar ul.navbar-nav > li > a,
+	.navbar ul.navbar-nav > li.active > a {
+		font-size: 16px;
+	}
+
+	/*endregion*/
 }
 
 /* Large devices (large desktops, 1200px and up) */
