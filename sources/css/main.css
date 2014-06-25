@@ -5,18 +5,14 @@ body {
 	font-family: 'Helvetica', Arial, "Lucida Grande", sans-serif;
 }
 
+/*common*/
+.noPadding {
+	padding-right: 0;
+	padding-left: 0;
+}
 
 
-/*.navbar .container{*/
-	/*background: transparent url(../img/top_image.png) 100% no-repeat;*/
-	/*backface-visibility: inherit;*/
-	/*background-position: 0 0;*/
-	/*background-size: 100% 100%;*/
-    /*height: 735px;*/
-    /*max-width: 1140px;*/
-/*}*/
-
-/* region Blocks styles*/
+/* region /*Blocks*/
 .block {
 	display: inline-block;
 	padding-right: 0;
@@ -41,18 +37,28 @@ body {
 .blockHeader {
 	padding: 15px 20px 0;
 	color: #b5295a;
-	font-size: 36px;
+	font-size: 30px;
 	text-transform: uppercase;
 	line-height: 42px;
 	margin: 0;
 }
 
+
+
+
+
 .blockContent {
 	padding: 0 20px;
 	font-size: 17px;
 	color: #717073;
-	margin: 36px 0 78px;
+	margin: 24px 0 70px;
 	line-height: 22px;
+}
+
+.small .blockContent {
+	padding: 0 10px;
+	margin: 10px 0 74px;
+	line-height: 20px;
 }
 
 .blueBlock .blockContent {
@@ -105,6 +111,11 @@ body {
 	line-height: 30px;
 }
 
+.small .download {
+	padding: 0px 2px;
+	font-size: 20px;
+}
+
 /*endregion*/
 
 /*region /*footer*/
@@ -139,25 +150,8 @@ body {
 
 /*endregion*/
 
-	.blockContent {
-		margin: 24px 0 70px;
-	}
 
-	.small .blockContent {
-		padding: 0 10px;
-		margin: 10px 0 74px;
-		line-height: 20px;
-	}
 
-	.blockHeader {
-		font-size: 30px;
-	}
-
-	.noPadding {
-		padding-right: 0;
-		padding-left: 0;
-	}
-}
 
 /*region /*Navigation*/
 .navbar.navbar-default {
@@ -246,29 +240,8 @@ body {
 	text-align: center;
 	padding: 10px;
 }
-
 /*endregion*/
 
-@media (max-width: 480px) {
-	.small .download {
-		padding: 0px 2px;
-		font-size: 20px;
-	}
-
-	.blockContent {
-		margin: 24px 0 70px;
-	}
-
-	.small .blockContent {
-		padding: 0 10px;
-		margin: 10px 0 74px;
-		line-height: 20px;
-	}
-
-	.blockHeader {
-		font-size: 30px;
-	}
-}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -328,6 +301,14 @@ body {
 
 	/*endregion*/
 
+	/*region /*Blocks*/
+	.blockHeader {
+		font-size: 36px;
+	}
+
+	.blockContent {
+		margin: 36px 0 78px;
+	}
 
 	.block.small .blockContent {
 		padding: 0 10px;
@@ -339,6 +320,8 @@ body {
 		padding: 0 5px;
 		font-size: 20px;
 	}
+	/*endregion*/
+
 
 }
 
