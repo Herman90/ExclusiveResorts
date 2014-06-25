@@ -13,7 +13,6 @@ $(function(){
     $(window).scroll(function() {
         $('.animate').each(function(){
             var imagePos = $(this).offset().top;
-            debugger;
             var topOfWindow = $(window).scrollTop();
             var windowHeight = $(window).height();
             if (imagePos < topOfWindow + windowHeight + 10) {
