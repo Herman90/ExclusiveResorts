@@ -5,6 +5,17 @@ body {
 	font-family: 'Helvetica', Arial, "Lucida Grande", sans-serif;
 }
 
+.block .blockHeader,
+.block .blockContent,
+.download,
+.video,
+.footer *,
+.navbar-nav *{
+	font-family: 'Verlag A', 'Verlag B';
+	font-weight: 400;
+	font-style: normal;
+}
+
 /*.navbar .container{*/
 /*background: transparent url(../img/top_image.png) 100% no-repeat;*/
 /*backface-visibility: inherit;*/
