@@ -157,7 +157,7 @@ body {
 		padding-right: 0;
 		padding-left: 0;
 	}
-}
+
 
 /*region /*Navigation*/
 .navbar.navbar-default {
@@ -249,7 +249,7 @@ body {
 
 /*endregion*/
 
-@media (max-width: 480px) {
+
 	.small .download {
 		padding: 0px 2px;
 		font-size: 20px;
@@ -268,7 +268,7 @@ body {
 	.blockHeader {
 		font-size: 30px;
 	}
-}
+
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
