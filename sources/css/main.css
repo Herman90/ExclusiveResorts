@@ -172,6 +172,7 @@ body {
 .navbar.navbar-default {
 	background-color: transparent;
 	border: 0;
+	margin-bottom: -62px;
 }
 
 .navbar-nav {
@@ -291,6 +292,35 @@ body {
 
 /*endregion*/
 
+/*region /*common blocks styles*/
+.block-overflow-hidden {
+	overflow: hidden;
+	height: 0;
+	padding-top: 64%;
+}
+
+.block-overflow-hidden > img {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: auto;
+}
+
+/*endregion*/
+
+/*region /*Main Area*/
+#main-content-img {
+	position: absolute;
+	top: 0;
+	left: 10%;
+	width: 64%;
+	max-width: 550px;
+	padding-top: 22%;
+	z-index: 1;
+}
+
+/*endregion*/
+
 .small .download {
 	padding: 0px 2px;
 	font-size: 20px;
@@ -325,9 +355,13 @@ body {
 	}
 
 	.navbar ul.navbar-nav > li > a,
-	.navbar ul.navbar-nav > li.active > a {
+	.navbar ul.navbar-nav > li.active > a,
+	.navbar ul.navbar-nav > li > a:hover,
+	.navbar ul.navbar-nav > li.active > a:hover {
 		font-size: 12px;
 		padding: 24px 15px;
+		border-top: 0;
+		border-left: 1px solid #83acc1;
 	}
 
 	.navbar > .container .navbar-brand {
@@ -364,7 +398,9 @@ body {
 	/*region /*Navigation*/
 
 	.navbar ul.navbar-nav > li > a,
-	.navbar ul.navbar-nav > li.active > a {
+	.navbar ul.navbar-nav > li.active > a,
+	.navbar ul.navbar-nav > li > a:hover,
+	.navbar ul.navbar-nav > li.active > a:hover {
 		font-size: 16px;
 	}
 
