@@ -11,6 +11,17 @@ body {
 	padding-left: 0;
 }
 
+.block .blockHeader,
+.block .blockContent,
+.download,
+.video,
+.footer *,
+.navbar-nav *{
+	font-family: 'Verlag A', 'Verlag B';
+	font-weight: 400;
+	font-style: normal;
+}
+
 
 /* region /*Blocks*/
 .block {
@@ -18,6 +29,7 @@ body {
 	padding-right: 0;
 	padding-left: 0;
 	overflow: hidden;
+	height: auto;
 }
 
 .block img {
@@ -49,7 +61,7 @@ body {
 
 .blockContent {
 	padding: 0 20px;
-	font-size: 17px;
+	font-size: 18px;
 	color: #717073;
 	margin: 24px 0 70px;
 	line-height: 22px;
@@ -276,6 +288,10 @@ body {
 
 	/*endregion*/
 
+	#overview > .block{
+		height: 374px;
+	}
+
 	.small .download {
 		padding: 0 1px;
 		font-size: 15px;
@@ -329,4 +345,9 @@ body {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+	/*region/*Blocks*/
+	.small .download {
+		font-size: 24px;
+	}
+	/*endregion*/
 }
