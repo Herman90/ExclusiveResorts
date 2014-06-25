@@ -14,12 +14,13 @@ body {
 /*max-width: 1140px;*/
 /*}*/
 
-/* region Blocks styles*/
+/* region /*Blocks*/
 .block {
 	display: inline-block;
 	padding-right: 0;
 	padding-left: 0;
 	overflow: hidden;
+	height: auto;
 }
 
 .block img {
@@ -39,7 +40,7 @@ body {
 .blockHeader {
 	padding: 15px 20px 0;
 	color: #b5295a;
-	font-size: 36px;
+	font-size: 30px;
 	text-transform: uppercase;
 	line-height: 42px;
 	margin: 0;
@@ -47,10 +48,16 @@ body {
 
 .blockContent {
 	padding: 0 20px;
-	font-size: 17px;
+	font-size: 18px;
 	color: #717073;
-	margin: 36px 0 78px;
+	margin: 24px 0 70px;
 	line-height: 22px;
+}
+
+.small .blockContent {
+	padding: 0 10px;
+	margin: 10px 0 74px;
+	line-height: 20px;
 }
 
 .blueBlock .blockContent {
@@ -101,6 +108,11 @@ body {
 	float: right;
 	font-size: 30px;
 	line-height: 30px;
+}
+
+.small .download {
+	padding: 0px 2px;
+	font-size: 20px;
 }
 
 /*endregion*/
@@ -329,6 +341,10 @@ body {
 
 	/*endregion*/
 
+	#overview > .block {
+		height: 374px;
+	}
+
 	.small .download {
 		padding: 0 1px;
 		font-size: 15px;
@@ -354,6 +370,14 @@ body {
 
 	/*endregion*/
 
+	/*region /*Blocks*/
+	.blockHeader {
+		font-size: 36px;
+	}
+
+	.blockContent {
+		margin: 36px 0 78px;
+	}
 
 	.block.small .blockContent {
 		padding: 0 10px;
@@ -366,8 +390,16 @@ body {
 		font-size: 20px;
 	}
 
+	/*endregion*/
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+	/*region/*Blocks*/
+	.small .download {
+		font-size: 24px;
+	}
+
+	/*endregion*/
 }
