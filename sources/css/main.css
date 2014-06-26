@@ -17,6 +17,8 @@ body {
 }
 
 /*region /*animation*/
+
+
 .slideUp{
 	animation-name: slideUp;
 	-webkit-animation-name: slideUp;
@@ -28,6 +30,16 @@ body {
 	-webkit-animation-timing-function: ease;
 
 	visibility: visible !important;
+}
+.fast{
+	animation-duration: 0.4s;
+	-webkit-animation-duration: 0.4s;
+
+}
+.slow{
+	animation-duration: 1.2s;
+	-webkit-animation-duration: 1.2s;
+
 }
 
 @keyframes slideUp {
