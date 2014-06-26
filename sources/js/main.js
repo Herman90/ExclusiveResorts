@@ -11,24 +11,31 @@ $(function() {
 	});
 
 	$(window).scroll(function() {
-		var topOfWindow = $(window).scrollTop();
-		var windowHeight = $(window).height();
-		$('.animate').each(function() {
-			var imagePos = $(this).offset().top;
-			if(imagePos < topOfWindow + windowHeight + 10) {
-				$(this).addClass("slideUp");
-			} else {
-				$(this).removeClass("slideUp");
-			}
-		});
-
-		$('.add-info').each(function() {
-			var imagePos = $(this).offset().top;
-			if(imagePos < topOfWindow + windowHeight - 50) {
-				$(this).addClass("fadeIn");
-			} else {
-				$(this).removeClass("fadeIn");
-			}
-		})
+        animateIfVisible();
 	});
+
+    function animateIfVisible(){
+        var topOfWindow = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        $('.animate').each(function() {
+            var imagePos = $(this).offset().top;
+            if(imagePos < topOfWindow + windowHeight + 10) {
+                $(this).addClass("slideUp");
+            } else {
+                $(this).removeClass("slideUp");
+            }
+        });
+
+        $('.animateFadeIn').each(function() {
+            var imagePos = $(this).offset().top;
+            var imageHeight = $(this).height();
+            if(imagePos < topOfWindow + windowHeight - imageHeight - 10 && imagePos >= topOfWindow) {
+                $(this).addClass("fadeIn");
+            } else if(imagePos + imageHeight < topOfWindow || imagePos > topOfWindow + windowHeight){
+                $(this).removeClass("fadeIn");
+            }
+        })
+    }
+
+    animateIfVisible();
 });
