@@ -544,7 +544,7 @@ body {
 
 	/*endregion*/
 
-	/*region /*Overview and Financial*/
+	/*region /*Overview, Financial, Residences*/
 	#overview > .block {
 		height: 256px;
 	}
@@ -562,11 +562,23 @@ body {
 	}
 
 	#financial> .block {
-		height: 278px;
+		height: 318px;
 	}
 
 	#financial > .block > .textBlock {
 		height: auto;
+	}
+
+	#residences > .block {
+		height: 395px;
+	}
+
+	#residences > .block > .block {
+		height: 123px;
+	}
+
+	#residences > .block > .textBlock {
+		height: 150px;
 	}
 
 	/*endregion*/
@@ -600,7 +612,7 @@ body {
 
 	.block.small .blockContent {
 		padding: 0 10px;
-		margin: 10px 0 35px;
+		margin: 10px 0 45px;
 		line-height: 20px;
 	}
 
@@ -630,15 +642,34 @@ body {
 
 	/*endregion*/
 
-	/*region /*Overview and Financial*/
-	#overview > .block,
-	#financial > .block {
+	/*region /*Overview, Financial, Residences*/
+	#overview > .block {
 		height: 330px;
+	}
+
+	#financial > .block {
+		height: 340px
 	}
 
 	#overview > .block > .block,
 	#financial > .block > .block {
-		height: 165px;
+		height: 166px;
+	}
+
+	#financial > .block > .textBlock {
+		height: auto;
+	}
+
+	#residences > .block {
+		height: 511px;
+	}
+
+	#residences > .block > .block {
+		height: 160px;
+	}
+
+	#residences > .block > .textBlock {
+		height: 192px;
 	}
 
 	/*endregion*/
@@ -655,9 +686,15 @@ body {
 		font-size: 22px;
 	}
 
+	.block.small .blockContent {
+		padding: 0 10px;
+		margin: 14px 0 74px;
+		line-height: 20px;
+	}
+
 	/*endregion*/
 
-	/*region /*Overview and Financial*/
+	/*region /*Overview, Financial, Residences*/
 	#overview > .block,
 	#financial > .block {
 		height: 374px;
@@ -666,6 +703,22 @@ body {
 	#overview > .block > .block,
 	#financial > .block > .block {
 		height: 187px;
+	}
+
+	#financial > .block > .textBlock {
+		height: auto;
+	}
+
+	#residences > .block {
+		height: 579px;
+	}
+
+	#residences > .block > .block {
+		height: 181px;
+	}
+
+	#residences > .block > .textBlock {
+		height: 217px;
 	}
 
 	/*endregion*/
