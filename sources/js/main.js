@@ -11,15 +11,24 @@ $(function(){
     });
 
     $(window).scroll(function() {
+        var topOfWindow = $(window).scrollTop();
+        var windowHeight = $(window).height();
         $('.animate').each(function(){
             var imagePos = $(this).offset().top;
-            var topOfWindow = $(window).scrollTop();
-            var windowHeight = $(window).height();
             if (imagePos < topOfWindow + windowHeight + 10) {
                 $(this).addClass("slideUp");
             }else{
                 $(this).removeClass("slideUp");
             }
         });
+
+        $('.add-info').each(function(){
+            var imagePos = $(this).offset().top;
+            if (imagePos < topOfWindow + windowHeight - 50) {
+                $(this).addClass("fadeIn");
+            }else{
+                $(this).removeClass("fadeIn");
+            }
+        })
     });
 });
