@@ -44,7 +44,7 @@ body {
 
 @keyframes slideUp {
 	0% {
-		transform: translateY(100px);
+		transform: translateY(20%);
 		opacity: 0.2;
 	}
 
@@ -61,7 +61,7 @@ body {
 
 @-webkit-keyframes slideUp {
 	0% {
-		-webkit-transform: translateY(10%);
+		-webkit-transform: translateY(20%);
 		opacity: 0.2;
 	}
 
@@ -141,7 +141,8 @@ body {
 	height: auto;
 }
 
-.animate{
+.animate,
+.animateFadeIn{
 	visibility: hidden;
 }
 
@@ -400,7 +401,6 @@ body {
 	background-color: transparent;
 	border: 2px solid #79a891;
 	padding: 2px;
-	visibility: hidden;
 }
 
 .inner-add-info {
