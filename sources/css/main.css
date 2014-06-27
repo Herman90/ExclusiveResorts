@@ -1,3 +1,17 @@
+/*
+Global: font-family:'ITC Berkeley Old Style W01’;
+
+ITC Berkeley Oldstyle™ W01 Book: font-family:'ITC Berkeley Old Style W01'; font-weight:300; font-style:normal;
+ITC Berkeley Oldstyle™ W01 Book Italic: font-family:'ITC Berkeley Old Style W01'; font-weight:400; font-style:italic;
+ITC Berkeley Oldstyle™ W01 Medium: font-family:'ITC Berkeley Old Style W01'; font-weight:500; font-style:normal;
+ITC Berkeley Oldstyle™ W01 Italic: font-family:'ITC Berkeley Old Style W01'; font-weight:500; font-style:italic;
+ITC Berkeley Oldstyle™ W01 Bold: font-family:'ITC Berkeley Old Style W01'; font-weight:700; font-style:normal;
+ITC Berkeley Oldstyle™ W01 Bold Italic: font-family:'ITC Berkeley Old Style W01'; font-weight:700; font-style:italic;
+ITC Berkeley Oldstyle™ W01 Black: font-family:'ITC Berkeley Old Style W01'; font-weight:800; font-style:normal;
+ITC Berkeley Oldstyle™ W01 Black Italic: font-family:'ITC Berkeley Old Style W01'; font-weight:800; font-style:italic;
+
+*/
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
@@ -11,7 +25,7 @@ body {
 .video,
 .footer *,
 .navbar-nav * {
-	font-family: 'Verlag A', 'Verlag B';
+	font-family: 'Verlag A', 'Verlag B, ITC Berkeley Old Style W01';
 	font-weight: 400;
 	font-style: normal;
 }
