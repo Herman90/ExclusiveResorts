@@ -17,7 +17,8 @@
 	<link href="sources/css/main.css" rel="stylesheet">
 
 	<!--<script type="text/javascript" src="http://fast.fonts.net/jsapi/4e8bb644-1096-4694-908b-89d4ed90700c.js"></script>-->
-	<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/4e8bb644-1096-4694-908b-89d4ed90700c.css"/>
+	<link type="text/css" rel="stylesheet"
+		  href="http://fast.fonts.net/cssapi/4e8bb644-1096-4694-908b-89d4ed90700c.css"/>
 
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -31,7 +32,7 @@
 
 <!-- Static navbar -->
 <div class="navbar navbar-default navbar-static-top">
-	<div class="container">
+	<div class="container noPadding">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="#"><img class="img-responsive" src="sources/img/logo_img.png"
 												  title="Exclusive Resorts"
@@ -43,7 +44,7 @@
 				<span class="icon-close">X</span>
 			</a>
 		</div>
-		<div class="navbar-collapse collapse">
+		<div class="navbar-collapse collapse ">
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="#overview">Overview</a></li>
 				<li><a href="#financial">Finanical</a></li>
@@ -152,7 +153,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="clearfix" id="membership">
+	<div id="membership" class="clearfix">
 		<div class="block col-xs-12 animate fast">
 			<img src="sources/img/membership_big_photo.png" class="img-responsive">
 
@@ -160,32 +161,34 @@
 				<div class="inner-add-info">Example of addtional info</div>
 			</div>
 		</div>
-		<div class="block textBlock col-xs-12 col-sm-5 animate" style="height: 374px">
-			<h1 class="blockHeader">lorem ipsum</h1>
+		<div id="membership_wrap">
+			<div class="block textBlock col-xs-12 col-sm-5 animate">
+				<h1 class="blockHeader">lorem ipsum</h1>
 
-			<p class="blockContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				Morbi interdum egestas sollicitudin.
-				Proin eu nibh ac tortor fermentum</p>
+				<p class="blockContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Morbi interdum egestas sollicitudin.
+					Proin eu nibh ac tortor fermentum</p>
 
-			<div class="video">watch video</div>
+				<div class="video">watch video</div>
+			</div>
+			<div class="block col-xs-6 col-sm-2 animate slow">
+				<div class="block half-block col-xs-12"><img src="sources/img/membership_small_sea.png"
+															 class="img-responsive"></div>
+				<div class="block half-block col-xs-12"><img src="sources/img/membership_small_wedding.png"
+															 class="img-responsive"></div>
+			</div>
+			<div class="block col-xs-6 col-sm-2 animate">
+				<div class="block half-block col-xs-12"><img src="sources/img/membership_small_newyork.png"
+															 class="img-responsive"></div>
+				<div class="block half-block col-xs-12"><img src="sources/img/membership_small_table.png"
+															 class="img-responsive"></div>
+			</div>
+			<div class="block grayBlock col-xs-12 col-sm-3"></div>
 		</div>
-		<div class="block col-xs-6 col-sm-2 animate slow" style="height: 374px">
-			<div class="block col-xs-12" style="height: 187px"><img src="sources/img/membership_small_sea.png"
-																	class="img-responsive"></div>
-			<div class="block col-xs-12" style="height: 187px"><img src="sources/img/membership_small_wedding.png"
-																	class="img-responsive"></div>
-		</div>
-		<div class="block col-xs-6 col-sm-2 animate" style="height: 374px">
-			<div class="block col-xs-12" style="height: 187px"><img src="sources/img/membership_small_newyork.png"
-																	class="img-responsive"></div>
-			<div class="block col-xs-12" style="height: 187px"><img src="sources/img/membership_small_table.png"
-																	class="img-responsive"></div>
-		</div>
-		<div class="block col-xs-12 col-sm-3" style="background-color: #717073; height: 374px"></div>
 	</div>
-	<div class="clearfix" id="innovation">
+	<div id="innovation" class="clearfix">
 		<div class="block col-sm-6 col-xs-12 animate fast"><img src="sources/img/destination-name.png"></div>
-		<div class="block textBlock col-xs-12 col-sm-6 animate" style="height: 374px">
+		<div class="block textBlock col-xs-12 col-sm-6 animate">
 			<h1 class="blockHeader">lorem ipsum</h1>
 
 			<p class="blockContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum egestas
@@ -198,20 +201,20 @@
 			<div class="video">watch video</div>
 		</div>
 	</div>
-	<div class="clearfix" id="downloads">
-		<div class="block textBlock col-xs-8 col-sm-4 animate fast" style="height: 187px">
+	<div id="downloads" class="clearfix">
+		<div class="block textBlock col-xs-8 col-sm-4 animate fast">
 			<h1 class="blockHeader">lorem ipsum Dolar Sit</h1>
 
 			<p class="blockContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum egestas </p>
 		</div>
-		<div class="block textBlock blueBlock small col-xs-4 col-sm-2 animate" style="height: 187px">
+		<div class="block textBlock blueBlock small col-xs-4 col-sm-2 animate">
 			<p class="blockContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 
 			<div class="download">download</div>
 		</div>
-		<div class="block col-xs-4 col-sm-2 animate" style="background-color: #717073; height: 187px"></div>
-		<div class="block col-xs-4 col-sm-2 animate slow" style="background-color: #717073; height: 187px"></div>
-		<div class="block textBlock blueBlock small col-xs-4 col-sm-2" style="height: 187px">
+		<div class="block col-xs-4 grayBlock col-sm-2 animate"></div>
+		<div class="block col-xs-4 grayBlock col-sm-2 animate slow"></div>
+		<div class="block textBlock blueBlock small col-xs-4 col-sm-2">
 			<p class="blockContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 
 			<div class="download">download</div>
