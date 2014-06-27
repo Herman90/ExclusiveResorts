@@ -343,7 +343,8 @@ body *{
 .navbar ul.navbar-nav > li > a:hover,
 .navbar ul.navbar-nav > li.active > a:hover {
 	background-color: #a8cee1;
-	font: normal 16px/14px 'Helvetica';
+	font: normal 16px/14px 'Verlag A', 'Verlag B, ITC Berkeley Old Style W01';
+	font-weight: 300;
 	text-transform: uppercase;
 	color: #003151;
 	padding: 15px;
