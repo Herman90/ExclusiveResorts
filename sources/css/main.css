@@ -449,6 +449,7 @@ body *{
 	height: 100%;
 	background-color: #79a891;
 	font: normal 20px "ITC Berkeley Old Style W01";
+	font-weight: 300;
 	color: #fff;
 	text-align: left;
 	padding: 15px 5px 5px;
@@ -459,6 +460,10 @@ body *{
 	text-align: center;
 	padding: 5px 0;
 	line-height: normal;
+}
+
+#residences .inner-add-info{
+	font-weight:500;
 }
 
 .firstWord{
