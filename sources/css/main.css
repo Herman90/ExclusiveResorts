@@ -233,6 +233,11 @@ body * {
 	height: 100%;
 }
 
+.er-video,
+.er-video-img {
+	cursor: pointer;
+}
+
 .er-video {
 	display: block;
 	padding: 0px 20px;
@@ -271,6 +276,7 @@ body * {
 	position: absolute;
 	bottom: 0;
 	line-height: 35px;
+	cursor: pointer;
 }
 
 .download:after,

@@ -55,6 +55,13 @@
 		<!--/.nav-collapse -->
 	</div>
 </div>
+<div id="v0" class="hidden video-container">
+	<div class="close-x">X</div>
+	<div class="video-wrapper">
+		<iframe width="560" height="315" src="//www.youtube.com/embed/b9A6Tdstrjw" frameborder="0"
+				allowfullscreen></iframe>
+	</div>
+</div>
 <div id="v1" class="hidden video-container">
 	<div class="close-x">X</div>
 	<div class="video-wrapper">
@@ -92,12 +99,16 @@
 </div>
 
 <div class="container noPadding">
-	<section class="main" id="main">
+	<div class="main" id="main">
 		<div id="main-content" class="col-xs-12 noPadding block-overflow-hidden">
 			<img src="sources/img/main-content-bg.png">
-			<img id="main-content-img" src="sources/img/main-content.png">
+
+			<div id="main-content-img">
+				<img src="sources/img/main-content-video.png" class="img-responsive er-video-img" data-video="#v0">
+				<img src="sources/img/main-content-text.png" class="img-responsive">
+			</div>
 		</div>
-	</section>
+	</div>
 	<div id="overview" class="overview">
 		<div class="block col-xs-12 col-sm-6 noPadding animate fast">
 			<img class="img-responsive" src="sources/img/man.png">

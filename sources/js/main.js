@@ -55,7 +55,7 @@ $(function() {
 
 $(function() {
 
-	$(".er-video").on("click", function(e) {
+	$(".er-video, .er-video-img").on("click", function(e) {
 		var $this = $(this),
 			videoContainerId = $this.attr("data-video");
 		$(videoContainerId).removeClass("hidden");
