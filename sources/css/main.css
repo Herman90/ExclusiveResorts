@@ -19,13 +19,14 @@ body * {
 	font-family: "ITC Berkeley Old Style W01";
 	font-weight: 300;
 	font-style: normal;
+	font-size: 0px;
 	/*font-family: 'Helvetica', Arial, "Lucida Grande", sans-serif;*/
 }
 
 .block .blockHeader,
 .block .blockContent,
 .download,
-.video,
+.er-video,
 .footer *,
 .navbar-nav * {
 	font-family: 'Verlag A', 'Verlag B, ITC Berkeley Old Style W01';
@@ -171,7 +172,7 @@ body * {
 }
 
 .block img {
-	height: 100%;
+	/*height: 100%;*/
 	width: 100%;
 }
 
@@ -232,7 +233,7 @@ body * {
 	height: 100%;
 }
 
-.video {
+.er-video {
 	display: block;
 	padding: 0px 20px;
 	font-size: 30px;
@@ -246,7 +247,7 @@ body * {
 	line-height: 35px;
 }
 
-.video:after {
+.er-video:after {
 	content: "\e029";
 	font-family: 'Glyphicons Halflings';
 	float: right;
@@ -527,6 +528,46 @@ body * {
 
 /*endregion*/
 
+/*region /*Video*/
+div.video-container {
+	position: fixed;
+	background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 10;
+}
+
+div.video-wrapper {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	margin-top: -127px;
+	left: 0;
+	padding: 0 15px;
+	text-align: center;
+}
+
+div.video-wrapper > iframe {
+	width: 560px;
+	max-width: 100%;
+	height: 264px;
+}
+
+div.close-x {
+	position: absolute;
+	top: 62px;
+	right: 20px;
+	color: #fff;
+	font-size: 15px;
+	font-family: 'Verlag A';
+	padding: 15px;
+	cursor: pointer;
+}
+
+/*endregion*/
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
@@ -548,13 +589,13 @@ body * {
 		line-height: 20px;
 	}
 
-	.video {
+	.er-video {
 		height: 30px;
 		line-height: 30px;
 		font-size: 20px;
 	}
 
-	.video:after {
+	.er-video:after {
 		line-height: 26px;
 	}
 
@@ -783,14 +824,25 @@ body * {
 		line-height: 32px;
 	}
 
-	.video {
+	.er-video {
 		height: 37px;
 		line-height: 37px;
 		font-size: 30px;
 	}
 
-	.video:after {
+	.er-video:after {
 		line-height: 32px;
+	}
+
+	/*endregion*/
+	/*region /*Video*/
+
+	div.video-wrapper {
+		margin-top: -147px;
+	}
+
+	div.video-wrapper > iframe {
+		height: 315px;
 	}
 
 	/*endregion*/

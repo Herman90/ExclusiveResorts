@@ -51,43 +51,19 @@ $(function() {
 		}
 		$nav.attr("style", "");
 	});
+});
 
-/*	b.prototype.show = function() {
-		if(!this.transitioning && !this.$element.hasClass("in")) {
-			var b = a.Event("show.bs.collapse");
-			if(this.$element.trigger(b), !b.isDefaultPrevented()) {
-				var c = this.$parent && this.$parent.find("> .panel > .in");
-				if(c && c.length) {
-					var d = c.data("bs.collapse");
-					if(d && d.transitioning)
-						return;
-					c.collapse("hide"), d || c.data("bs.collapse", null)
-				}
-				var e = this.dimension();
-				this.$element.removeClass("collapse").addClass("collapsing")[e](0), this.transitioning = 1;
-				var f = function() {
-					this.$element.removeClass("collapsing").addClass("in")[e]("auto"),
-						this.transitioning = 0,
-						this.$element.trigger("shown.bs.collapse")
-				};
-				if(!a.support.transition)
-					return f.call(this);
-				var g = a.camelCase(["scroll", e].join("-"));
-				this.$element.one(a.support.transition.end, a.proxy(f, this)).emulateTransitionEnd(350)[e](this.$element[0][g])
-			}
-		}
-	}
-	b.prototype.hide = function() {
-		if(!this.transitioning && this.$element.hasClass("in")) {
-			var b = a.Event("hide.bs.collapse");
-			if(this.$element.trigger(b), !b.isDefaultPrevented()) {
-				var c = this.dimension();
-				this.$element[c](this.$element[c]())[0].offsetHeight, this.$element.addClass("collapsing").removeClass("collapse").removeClass("in"), this.transitioning = 1;
-				var d = function() {
-					this.transitioning = 0, this.$element.trigger("hidden.bs.collapse").removeClass("collapsing").addClass("collapse")
-				};
-				return a.support.transition ? (this.$element[c](0).one(a.support.transition.end, a.proxy(d, this)).emulateTransitionEnd(350), void 0) : d.call(this)
-			}
-		}
-	}*/
+$(function() {
+
+	$(".er-video").on("click", function(e) {
+		var $this = $(this),
+			videoContainerId = $this.attr("data-video");
+		$(videoContainerId).removeClass("hidden");
+	});
+
+	$(".close-x").on("click", function(e) {
+		var $this = $(this),
+			$videoContainer = $this.parent(".video-container");
+		$videoContainer.addClass("hidden");
+	});
 });
