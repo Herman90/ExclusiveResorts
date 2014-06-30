@@ -15,10 +15,10 @@ ITC Berkeley Oldstyle™ W01 Black Italic: font-family:'ITC Berkeley Old Style W
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
-body *{
-	font-family:"ITC Berkeley Old Style W01";
-	font-weight:300;
-	font-style:normal;
+body * {
+	font-family: "ITC Berkeley Old Style W01";
+	font-weight: 300;
+	font-style: normal;
 	/*font-family: 'Helvetica', Arial, "Lucida Grande", sans-serif;*/
 }
 
@@ -256,12 +256,14 @@ body *{
 /*endregion*/
 
 /*region /*Download block*/
-.download {
+.download,
+.download:hover {
 	height: 35px;
 	display: block;
 	padding: 0px 10px;
 	font-size: 24px;
 	text-transform: uppercase;
+	text-decoration: none;
 	color: #fff;
 	width: 100%;
 	background-color: #729db3;
@@ -270,7 +272,8 @@ body *{
 	line-height: 35px;
 }
 
-.download:after {
+.download:after,
+.download:hover:after {
 	content: "\e026";
 	font-family: 'Glyphicons Halflings';
 	float: right;
@@ -278,7 +281,8 @@ body *{
 	line-height: 30px;
 }
 
-.small .download {
+.small .download,
+.small .download:hover {
 	padding: 0px 5px;
 	font-size: 20px;
 }
@@ -343,7 +347,7 @@ body *{
 .navbar ul.navbar-nav > li > a:hover,
 .navbar ul.navbar-nav > li.active > a:hover {
 	background-color: #a8cee1;
-	font: normal 16px/14px 'Verlag A', 'Verlag B, ITC Berkeley Old Style W01';
+	font: normal 16px/14px 'Verlag A';
 	font-weight: 300;
 	text-transform: uppercase;
 	color: #003151;
@@ -401,6 +405,7 @@ body *{
 	display: block;
 	font-size: 18px;
 	line-height: 27px;
+	font-family: 'Verlag A';
 	text-align: center;
 }
 
@@ -440,7 +445,7 @@ body *{
 	padding: 2px;
 }
 
-#membership .add-info{
+#membership .add-info {
 	width: 216px;
 }
 
@@ -456,17 +461,17 @@ body *{
 	line-height: 1.2;
 }
 
-#membership .inner-add-info{
+#membership .inner-add-info {
 	text-align: center;
 	padding: 5px 0;
 	line-height: normal;
 }
 
-#residences .inner-add-info{
-	font-weight:500;
+#residences .inner-add-info {
+	font-weight: 500;
 }
 
-.firstWord{
+.firstWord {
 	font-family: 'ITC Berkeley Old Style W01';
 	font-weight: 700;
 	font-style: italic;
@@ -474,14 +479,14 @@ body *{
 	line-height: 0.55;
 	margin: 0px 5px 0 -6px;
 	float: left;
-	text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
-#residences .firstWord{
+#residences .firstWord {
 	margin-left: 2px;
 }
 
-#membership .firstWord{
+#membership .firstWord {
 	font-size: 2.4em;
 	font-weight: 500;
 	font-style: normal;
@@ -565,16 +570,19 @@ body *{
 	/*endregion*/
 
 	/* region /*Download block*/
-	.download {
+	.download,
+	.download:hover {
 		height: 30px;
 		line-height: 30px;
 	}
 
-	.small .download {
+	.small .download,
+	.small .download:hover {
 		font-size: 15px;
 	}
 
-	.download:after {
+	.download:after,
+	.download:hover:after {
 		font-size: 20px;
 		line-height: 26px;
 	}
@@ -758,16 +766,19 @@ body *{
 		line-height: 20px;
 	}
 
-	.download {
+	.download,
+	.download:hover {
 		height: 37px;
 		line-height: 37px;
 	}
 
-	.small .download {
+	.small .download,
+	.small .download:hover {
 		font-size: 18px;
 	}
 
-	.download:after {
+	.download:after,
+	.download:hover:after {
 		font-size: 30px;
 		line-height: 32px;
 	}
@@ -832,7 +843,8 @@ body *{
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 	.container {
-		padding: 0 35px;
+		padding-left: 35px;
+		padding-right: 35px;
 	}
 
 	/*region /*Navigation*/
@@ -847,7 +859,8 @@ body *{
 
 	/*endregion*/
 	/*region/*Blocks*/
-	.small .download {
+	.small .download,
+	.small .download:hover {
 		font-size: 22px;
 	}
 
