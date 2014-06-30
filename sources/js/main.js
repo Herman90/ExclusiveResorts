@@ -57,13 +57,19 @@ $(function() {
 
 	$(".er-video, .er-video-img").on("click", function(e) {
 		var $this = $(this),
-			videoContainerId = $this.attr("data-video");
-		$(videoContainerId).removeClass("hidden");
+			$videoContainer = $("#videoBlock"),
+			$videoIFrame = $videoContainer.find("iframe"),
+			videoSource = $this.attr("data-video"),
+			YTIframe = "//www.youtube.com/embed/" + videoSource;
+		$videoIFrame.attr("src", YTIframe)
+		$videoContainer.removeClass("hidden");
 	});
 
 	$(".close-x").on("click", function(e) {
 		var $this = $(this),
-			$videoContainer = $this.parent(".video-container");
+			$videoContainer = $this.parent("#videoBlock"),
+			$videoIFrame = $videoContainer.find("iframe");
+		$videoIFrame.attr("src", "");
 		$videoContainer.addClass("hidden");
 	});
 });
