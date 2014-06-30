@@ -202,8 +202,26 @@ body * {
 	padding: 0 20px;
 	font-size: 18px;
 	color: #717073;
-	margin: 24px 0 70px;
+	margin: 24px 0 45px;
 	line-height: 22px;
+}
+
+.blockContent b {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+
+.block ul {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.block ul li {
+    font-size: 18px;
+    color: #666;
 }
 
 .blueBlock .blockContent {
@@ -584,14 +602,23 @@ div.close-x {
 	}
 
 	.blockContent {
-		margin: 10px 0 40px;
+		margin: 10px 0 0px;
 		font-size: 15px;
 		line-height: 17px;
 	}
 
+    .blockContent b {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .block ul li {
+        font-size: 15px;
+    }
+
 	.small .blockContent {
 		padding: 0 5px;
-		margin: 10px 0 40px;
+		margin: 10px 0 80px;
 		line-height: 20px;
 	}
 
@@ -756,7 +783,7 @@ div.close-x {
 	}
 
 	#residences > .block > .textBlock {
-		height: 150px;
+		height: 272px;
 	}
 
 	#membership_wrap > .block {
@@ -809,7 +836,7 @@ div.close-x {
 
 	.block.small .blockContent {
 		padding: 0 10px;
-		margin: 10px 0 45px;
+		margin: 10px 0 64px;
 		line-height: 20px;
 	}
 
@@ -880,7 +907,7 @@ div.close-x {
 	}
 
 	#residences > .block > .textBlock {
-		height: 192px;
+		height: 350px;
 	}
 
 	#membership_wrap > .block {
@@ -954,7 +981,7 @@ div.close-x {
 	}
 
 	#residences > .block > .textBlock {
-		height: 217px;
+		height: 400px;
 	}
 
 	#membership_wrap > .block {
