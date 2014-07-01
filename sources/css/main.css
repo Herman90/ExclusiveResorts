@@ -29,7 +29,7 @@ body * {
 .er-video,
 .footer *,
 .navbar-nav * {
-	font-family: 'Verlag A', 'Verlag B, ITC Berkeley Old Style W01';
+	font-family: 'Verlag A', 'Verlag B', 'ITC Berkeley Old Style W01';
 	font-weight: 400;
 	font-style: normal;
 }
@@ -347,7 +347,7 @@ body * {
 
 /*region /*Navigation*/
 .navbar.navbar-default {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -690,7 +690,7 @@ div.close-x {
 	.navbar .navbar-collapse {
 		position: absolute;
 		top: 0;
-		left: 154px;
+		left: 76px;
 		width: auto;
 		height: 62px !important;
 		overflow: hidden;
@@ -723,7 +723,10 @@ div.close-x {
 	}
 
 	.navbar-default .navbar-toggle,
-	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:hover {
+		display: none;
+	}
+
 	.navbar-default .navbar-toggle.collapsed,
 	.navbar-default .navbar-toggle.collapsed:hover {
 		display: block;
@@ -938,7 +941,7 @@ div.close-x {
 
 	/*region /*Navigation*/
 	.navbar .navbar-collapse {
-		left: 189px;
+		left: 111px;
 	}
 
 	.navbar-nav {
