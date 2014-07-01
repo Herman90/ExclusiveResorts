@@ -207,21 +207,20 @@ body * {
 }
 
 .blockContent b {
-    display: block;
-    font-size: 24px;
-    margin-bottom: 10px;
-    line-height: 30px;
+	display: block;
+	font-size: 24px;
+	margin-bottom: 10px;
+	line-height: 30px;
 }
 
-
 .block ul {
-    margin-top: 10px;
-    margin-bottom: 50px;
+	margin-top: 10px;
+	margin-bottom: 50px;
 }
 
 .block ul li {
-    font-size: 18px;
-    color: #666;
+	font-size: 18px;
+	color: #666;
 }
 
 .blueBlock .blockContent {
@@ -607,14 +606,14 @@ div.close-x {
 		line-height: 17px;
 	}
 
-    .blockContent b {
-        font-size: 16px;
-        line-height: 18px;
-    }
+	.blockContent b {
+		font-size: 16px;
+		line-height: 18px;
+	}
 
-    .block ul li {
-        font-size: 15px;
-    }
+	.block ul li {
+		font-size: 15px;
+	}
 
 	.small .blockContent {
 		padding: 0 5px;
@@ -750,6 +749,11 @@ div.close-x {
 	/*endregion*/
 
 	/*region /*Overview, Financial, Residences*/
+	#overview,
+	#financial {
+		float: left;
+	}
+
 	#overview > .block {
 		height: 256px;
 	}
