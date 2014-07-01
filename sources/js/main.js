@@ -54,8 +54,9 @@ $(function() {
 	});
 
 	$(document).on("click", function(e) {
-		var $target = $(e.target);
-		if($target.parents('.navbar.navbar-default').length === 0) {
+		var $target = $(e.target),
+			winWidth = $(window).width();
+		if($target.parents('.navbar.navbar-default').length === 0 && !(winWidth < tabletWidth)) {
 			$nav.collapse("hide");
 			$navToggle.addClass("collapsed");
 		}
