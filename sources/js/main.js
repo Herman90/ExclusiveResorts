@@ -60,7 +60,7 @@ $(function() {
 			$videoContainer = $("#videoBlock"),
 			$videoIFrame = $videoContainer.find("iframe"),
 			videoSource = $this.attr("data-video"),
-			YTIframe = "//www.youtube.com/embed/" + videoSource;
+			YTIframe = "//www.youtube.com/embed/" + videoSource + "?autoplay=1";
 		$videoIFrame.attr("src", YTIframe)
 		$videoContainer.removeClass("hidden");
 	});
