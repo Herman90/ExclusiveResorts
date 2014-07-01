@@ -226,7 +226,7 @@ body * {
 .blueBlock .blockContent {
 	color: #fff;
 	padding: 0 15px;
-	margin: 32px 0 74px;
+	margin: 32px 0 78px;
 }
 
 .grayBlock .graghic-placelolder {
@@ -236,7 +236,7 @@ body * {
 
 .small .blockContent {
 	padding: 0 10px;
-	margin: 10px 0 74px;
+	margin: 10px 0 78px;
 	line-height: 20px;
 }
 
@@ -469,6 +469,13 @@ body * {
 	padding: 2px;
 }
 
+#residences .add-info {
+    left: 20px;
+    bottom: 20px;
+    right: auto;
+    top: auto;
+}
+
 #membership .add-info {
 	width: 216px;
 }
@@ -549,6 +556,21 @@ body * {
 	z-index: 1;
 }
 
+.carousel-indicators {
+    bottom: -35px;
+    left: 5%;
+}
+
+.carousel-indicators li {
+    width: 14px;
+    height: 14px;
+}
+
+.carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+}
+
 /*endregion*/
 
 /*region /*Video*/
@@ -580,8 +602,10 @@ div.video-wrapper > iframe {
 
 div.close-x {
 	position: absolute;
-	top: 62px;
-	right: 20px;
+	top: 50%;
+    margin-top: -175px;
+	right: 50%;
+    margin-right: -325px;
 	color: #fff;
 	font-size: 15px;
 	font-family: 'Verlag A';
@@ -617,7 +641,7 @@ div.close-x {
 
 	.small .blockContent {
 		padding: 0 5px;
-		margin: 10px 0 80px;
+		margin: 10px 0 37px;
 		line-height: 20px;
 	}
 
@@ -774,7 +798,7 @@ div.close-x {
 	}
 
 	#financial> .block {
-		height: 318px;
+		height: 235px;
 	}
 
 	#financial > .block > .textBlock {
@@ -802,7 +826,7 @@ div.close-x {
 	}
 
 	#downloads > .block {
-		height: 140px;
+		height: 124px;
 	}
 
 	/*endregion*/
@@ -843,7 +867,7 @@ div.close-x {
 
 	.block.small .blockContent {
 		padding: 0 10px;
-		margin: 10px 0 64px;
+		margin: 10px 0 67px;
 		line-height: 20px;
 	}
 
@@ -893,7 +917,7 @@ div.close-x {
 	}
 
 	#financial > .block {
-		height: 340px
+		height: 303px
 	}
 
 	#overview > .block > .block,
@@ -926,7 +950,7 @@ div.close-x {
 	}
 
 	#downloads > .block {
-		height: 170px;
+		height: 160px;
 	}
 
 	/*endregion*/
@@ -958,7 +982,7 @@ div.close-x {
 
 	.block.small .blockContent {
 		padding: 0 10px;
-		margin: 14px 0 74px;
+		margin: 14px 0 79px;
 		line-height: 20px;
 	}
 
@@ -967,7 +991,7 @@ div.close-x {
 	/*region /*Overview, Financial, Residences*/
 	#overview > .block,
 	#financial > .block {
-		height: 374px;
+		height: 340px;
 	}
 
 	#overview > .block > .block,
@@ -1000,7 +1024,7 @@ div.close-x {
 	}
 
 	#downloads > .block {
-		height: 200px;
+		height: 180px;
 	}
 
 	/*endregion*/

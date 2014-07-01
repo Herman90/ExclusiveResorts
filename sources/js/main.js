@@ -69,17 +69,20 @@ $(function() {
 		var $this = $(this),
 			$videoContainer = $("#videoBlock"),
 			$videoIFrame = $videoContainer.find("iframe"),
-			videoSource = $this.attr("data-video"),
-			videoSource = "//www.youtube.com/embed/" + videoSource + "?autoplay=1";
-		$videoIFrame.attr("src", videoSource)
+			videoSourceId = $this.attr("data-video"),
+			videoSource = "//www.youtube.com/embed/" + videoSourceId + "?autoplay=1";
+	    $videoIFrame.attr("src", videoSource);
 		$videoContainer.removeClass("hidden");
 	});
 
-	$(".close-x").on("click", function(e) {
-		var $this = $(this),
-			$videoContainer = $this.parent("#videoBlock"),
+	$(".video-container").on("click", function (e) {
+		var $videoContainer = $(this),
 			$videoIFrame = $videoContainer.find("iframe");
 		$videoIFrame.attr("src", "");
 		$videoContainer.addClass("hidden");
 	});
+
+    $(".video-container iframe").on("click", function(e) {
+        e.preventDefault();
+    });
 });
