@@ -312,8 +312,13 @@ body * {
 
 .small .download,
 .small .download:hover {
-	padding: 0px 5px;
-	font-size: 20px;
+	padding: 0px 3px;
+	font-size: 13px;
+}
+
+.small .download:after,
+.small .download:hover:after {
+	font-size: 16px;
 }
 
 /*endregion*/
