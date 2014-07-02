@@ -355,6 +355,7 @@ body * {
 	background-color: transparent;
 	border: 0;
 	margin-bottom: 0;
+	z-index: 2;
 }
 
 .navbar-nav {
@@ -470,10 +471,10 @@ body * {
 }
 
 #residences .add-info {
-    left: 20px;
-    bottom: 20px;
-    right: auto;
-    top: auto;
+	left: 20px;
+	bottom: 20px;
+	right: auto;
+	top: auto;
 }
 
 #membership .add-info {
@@ -557,18 +558,18 @@ body * {
 }
 
 .carousel-indicators {
-    bottom: -35px;
-    left: 5%;
+	bottom: -35px;
+	left: 5%;
 }
 
 .carousel-indicators li {
-    width: 14px;
-    height: 14px;
+	width: 14px;
+	height: 14px;
 }
 
 .carousel-indicators .active {
-    width: 15px;
-    height: 15px;
+	width: 15px;
+	height: 15px;
 }
 
 /*endregion*/
@@ -603,9 +604,9 @@ div.video-wrapper > iframe {
 div.close-x {
 	position: absolute;
 	top: 50%;
-    margin-top: -175px;
-	right: 50%;
-    margin-right: -325px;
+	margin-top: -175px;
+	right: 15px;
+	/*margin-right: -325px;*/
 	color: #fff;
 	font-size: 15px;
 	font-family: 'Verlag A';
@@ -830,6 +831,23 @@ div.close-x {
 	}
 
 	/*endregion*/
+
+	/*region /*Video*/
+
+	div.video-wrapper {
+		margin-top: -147px;
+	}
+
+	div.video-wrapper > iframe {
+		height: 315px;
+	}
+
+	div.close-x {
+		right: 50%;
+		margin-right: -325px;
+	}
+
+	/*endregion*/
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -899,17 +917,7 @@ div.close-x {
 	}
 
 	/*endregion*/
-	/*region /*Video*/
 
-	div.video-wrapper {
-		margin-top: -147px;
-	}
-
-	div.video-wrapper > iframe {
-		height: 315px;
-	}
-
-	/*endregion*/
 
 	/*region /*Overview, Financial, Residences*/
 	#overview > .block {
