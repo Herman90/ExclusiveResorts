@@ -236,12 +236,17 @@ body * {
 
 .small .blockContent {
 	padding: 0 10px;
-	margin: 10px 0 78px;
+	margin: 10px 0 44px;
 	line-height: 20px;
 }
 
 .block.half-block {
 	padding-top: 98%;
+	height: 154px;
+}
+
+.block.half-block.half-block-50 {
+	padding-top: 49%;
 }
 
 .block.half-block > * {
@@ -656,7 +661,8 @@ div.close-x {
 		line-height: 26px;
 	}
 
-	.block.half-block {
+	.block.half-block,
+	.block.half-block.half-block-50 {
 		padding-top: 0;
 	}
 
@@ -826,7 +832,8 @@ div.close-x {
 		height: 260px;
 	}
 
-	#downloads > .block {
+	#downloads > .block,
+	#downloads > .block> .block {
 		height: 124px;
 	}
 
@@ -957,7 +964,8 @@ div.close-x {
 		height: 336px;
 	}
 
-	#downloads > .block {
+	#downloads > .block,
+	#downloads > .block> .block {
 		height: 160px;
 	}
 
@@ -1031,7 +1039,8 @@ div.close-x {
 		height: 380px;
 	}
 
-	#downloads > .block {
+	#downloads > .block,
+	#downloads > .block> .block {
 		height: 180px;
 	}
 
