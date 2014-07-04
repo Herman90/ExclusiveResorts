@@ -20,9 +20,9 @@ $(function() {
 		$('.animate').each(function() {
 			var imagePos = $(this).offset().top;
 			if(imagePos < topOfWindow + windowHeight + 10) {
-				$(this).addClass("slideUp");
+				$(this).addClass('slideUp');
 			} else {
-				$(this).removeClass("slideUp");
+				$(this).removeClass('slideUp');
 			}
 		});
 
@@ -30,9 +30,9 @@ $(function() {
 			var imagePos = $(this).offset().top;
 			var imageHeight = $(this).height();
 			if(imagePos < topOfWindow + windowHeight - imageHeight - 10 && imagePos >= topOfWindow) {
-				$(this).addClass("fadeIn");
+				$(this).addClass('fadeIn');
 			} else if(imagePos + imageHeight < topOfWindow || imagePos > topOfWindow + windowHeight) {
-				$(this).removeClass("fadeIn");
+				$(this).removeClass('fadeIn');
 			}
 		})
 	}
@@ -40,52 +40,57 @@ $(function() {
 	animateIfVisible();
 });
 $(function() {
-	var $nav = $(".navbar-collapse"),
+	var $nav = $('.navbar-collapse'),
 		$navToggle = $('.navbar-toggle'),
 		tabletWidth = 768;
-	$nav.on("show.bs.collapse hide.bs.collapse", function(e) {
+	$nav.on('show.bs.collapse hide.bs.collapse', function(e) {
 		var winWidth = $(window).width();
 		if(winWidth < tabletWidth) {
-			$nav.removeClass("width");
+			$nav.removeClass('width');
 		} else {
-			$nav.addClass("width");
+			$nav.addClass('width');
 		}
-		$nav.attr("style", "");
+		$nav.attr('style', '');
 	});
 
-	$(document).on("click", function(e) {
+	$(document).on('click', function(e) {
 		var $target = $(e.target),
 			winWidth = $(window).width();
 		if($target.parents('.navbar.navbar-default').length === 0 && !(winWidth < tabletWidth)) {
-			$nav.collapse("hide");
-			$navToggle.addClass("collapsed");
+			$nav.collapse('hide');
+			$navToggle.addClass('collapsed');
 		}
 	})
 });
 
 $(function() {
-	var $htmlAndBody = $("html,body"),
-		$videoContainer = $("#videoBlock"),
-		$videoIFrame = $videoContainer.find("iframe");
+	var $htmlAndBody = $('html,body'),
+		$body = $('body'),
+		$videoContainer = $('#videoBlock'),
+		$videoIFrame = $videoContainer.find('iframe');
 
-	$(".er-video, .er-video-img").on("click", function(e) {
+	$('.er-video, .er-video-img').on('click', function(e) {
 		var $this = $(this),
-			videoSourceId = $this.attr("data-video"),
-			videoSource = "//www.youtube.com/embed/" + videoSourceId + "?autoplay=1";
-		$videoIFrame.attr("src", videoSource);
-		$videoContainer.removeClass("hidden");
-		$htmlAndBody.css("overflow", "hidden");
+			videoSourceId = $this.attr('data-video'),
+			videoSource = '//www.youtube.com/embed/' + videoSourceId + '?autoplay=1';
+		$videoIFrame.attr('src', videoSource);
+		$videoContainer.removeClass('hidden');
+		$htmlAndBody.css('overflow', 'hidden');
+		$body.on('touchmove', function(e) {
+			e.preventDefault()
+		})
 	});
 
-	$(".video-container").on("click", function(e) {
+	$videoContainer.on('click', function(e) {
 
-		$videoIFrame.attr("src", "");
-		$videoContainer.addClass("hidden");
-		$htmlAndBody.css("overflow", "auto");
+		$videoIFrame.attr('src', '');
+		$videoContainer.addClass('hidden');
+		$htmlAndBody.css('overflow', 'auto');
+		$body.off('touchmove');
 		return false;
 	});
 
-	$(".video-container iframe").on("click", function(e) {
+	$videoIFrame.on('click, touchmove', function(e) {
 		e.preventDefault();
 	});
 });
