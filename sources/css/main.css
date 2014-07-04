@@ -209,7 +209,7 @@ body * {
 }
 
 .blockContent {
-	padding: 0 20px;
+	padding: 0 18px;
 	font-size: 18px;
 	color: #333;
 	margin: 10px 0 20px;
@@ -641,6 +641,10 @@ div.close-x {
 }
 
 /*endregion*/
+
+#downloads .block.half-block {
+    height: 175px;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
