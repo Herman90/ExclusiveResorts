@@ -684,7 +684,7 @@ div.close-x {
 
 	.small .blockContent {
 		padding: 0 5px;
-		margin: 10px 0 37px;
+		margin: 10px 0 52px;
 		line-height: 20px;
 	}
 
@@ -826,7 +826,7 @@ div.close-x {
 	}
 
 	#overview > .block {
-		height: 256px;
+		height: 255px;
 	}
 
 	#overview > .block > .block,
@@ -842,7 +842,7 @@ div.close-x {
 	}
 
 	#financial> .block {
-		height: 235px;
+		height: 250px;
 	}
 
 	#financial > .block > .textBlock {
@@ -858,7 +858,7 @@ div.close-x {
 	}
 
 	#residences > .block > .textBlock {
-		height: 272px;
+		height: 290px;
 	}
 
 	#membership_wrap > .block {
