@@ -23,6 +23,11 @@ body * {
 	/*font-family: 'Helvetica', Arial, "Lucida Grande", sans-serif;*/
 }
 
+.no-scroll {
+	overflow: auto;
+	position: fixed;
+}
+
 .block .blockHeader,
 .block .blockContent,
 .blockContent b,
@@ -643,11 +648,16 @@ div.close-x {
 /*endregion*/
 
 #downloads .block.half-block {
-    height: 175px;
+	height: 175px;
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+	.no-scroll {
+		left: 50%;
+		margin-left: -375px;
+	}
 
 	.add-info {
 		width: 256px;
@@ -912,6 +922,10 @@ div.close-x {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
+	.no-scroll {
+		margin-left: -485px;
+	}
+
 	.block.textBlock.description .blockContent {
 		font-size: 18px;
 	}
@@ -1043,6 +1057,10 @@ div.close-x {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+	.no-scroll {
+		margin-left: -585px;
+	}
 
 	.container {
 		padding-left: 35px;

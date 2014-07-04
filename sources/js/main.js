@@ -75,7 +75,7 @@ $(function() {
 			videoSource = '//www.youtube.com/embed/' + videoSourceId + '?autoplay=1';
 		$videoIFrame.attr('src', videoSource);
 		$videoContainer.removeClass('hidden');
-		$htmlAndBody.css('overflow', 'hidden');
+		$htmlAndBody.addClass('no-scroll');
 
 		$body.on('touchmove', function(e) {
 			e.preventDefault()
@@ -86,13 +86,13 @@ $(function() {
 
 		$videoIFrame.attr('src', '');
 		$videoContainer.addClass('hidden');
-		$htmlAndBody.css('overflow', 'auto');
+		$htmlAndBody.removeClass('no-scroll');
 
 		$body.off('touchmove');
 		return false;
 	});
 
 	$videoIFrame.on('click touchstart touchmove', function(e) {
-		return false;
+		e.preventDefault();
 	});
 });
