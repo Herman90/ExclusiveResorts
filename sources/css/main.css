@@ -236,12 +236,17 @@ body * {
 
 .small .blockContent {
 	padding: 0 10px;
-	margin: 10px 0 78px;
+	margin: 10px 0 44px;
 	line-height: 20px;
 }
 
 .block.half-block {
 	padding-top: 98%;
+	height: 154px;
+}
+
+.block.half-block.half-block-50 {
+	padding-top: 49%;
 }
 
 .block.half-block > * {
@@ -307,8 +312,13 @@ body * {
 
 .small .download,
 .small .download:hover {
-	padding: 0px 5px;
-	font-size: 20px;
+	padding: 0px 3px;
+	font-size: 13px;
+}
+
+.small .download:after,
+.small .download:hover:after {
+	font-size: 16px;
 }
 
 /*endregion*/
@@ -355,6 +365,7 @@ body * {
 	background-color: transparent;
 	border: 0;
 	margin-bottom: 0;
+	z-index: 2;
 }
 
 .navbar-nav {
@@ -470,10 +481,10 @@ body * {
 }
 
 #residences .add-info {
-    left: 20px;
-    bottom: 20px;
-    right: auto;
-    top: auto;
+	left: 20px;
+	bottom: 20px;
+	right: auto;
+	top: auto;
 }
 
 #membership .add-info {
@@ -557,18 +568,18 @@ body * {
 }
 
 .carousel-indicators {
-    bottom: -35px;
-    left: 5%;
+	bottom: -35px;
+	left: 5%;
 }
 
 .carousel-indicators li {
-    width: 14px;
-    height: 14px;
+	width: 14px;
+	height: 14px;
 }
 
 .carousel-indicators .active {
-    width: 15px;
-    height: 15px;
+	width: 15px;
+	height: 15px;
 }
 
 /*endregion*/
@@ -603,9 +614,9 @@ div.video-wrapper > iframe {
 div.close-x {
 	position: absolute;
 	top: 50%;
-    margin-top: -175px;
-	right: 50%;
-    margin-right: -325px;
+	margin-top: -175px;
+	right: 15px;
+	/*margin-right: -325px;*/
 	color: #fff;
 	font-size: 15px;
 	font-family: 'Verlag A';
@@ -655,7 +666,8 @@ div.close-x {
 		line-height: 26px;
 	}
 
-	.block.half-block {
+	.block.half-block,
+	.block.half-block.half-block-50 {
 		padding-top: 0;
 	}
 
@@ -825,8 +837,26 @@ div.close-x {
 		height: 260px;
 	}
 
-	#downloads > .block {
+	#downloads > .block,
+	#downloads > .block> .block {
 		height: 124px;
+	}
+
+	/*endregion*/
+
+	/*region /*Video*/
+
+	div.video-wrapper {
+		margin-top: -147px;
+	}
+
+	div.video-wrapper > iframe {
+		height: 315px;
+	}
+
+	div.close-x {
+		right: 50%;
+		margin-right: -325px;
 	}
 
 	/*endregion*/
@@ -899,17 +929,7 @@ div.close-x {
 	}
 
 	/*endregion*/
-	/*region /*Video*/
 
-	div.video-wrapper {
-		margin-top: -147px;
-	}
-
-	div.video-wrapper > iframe {
-		height: 315px;
-	}
-
-	/*endregion*/
 
 	/*region /*Overview, Financial, Residences*/
 	#overview > .block {
@@ -949,7 +969,8 @@ div.close-x {
 		height: 336px;
 	}
 
-	#downloads > .block {
+	#downloads > .block,
+	#downloads > .block> .block {
 		height: 160px;
 	}
 
@@ -1023,7 +1044,8 @@ div.close-x {
 		height: 380px;
 	}
 
-	#downloads > .block {
+	#downloads > .block,
+	#downloads > .block> .block {
 		height: 180px;
 	}
 

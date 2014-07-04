@@ -71,18 +71,19 @@ $(function() {
 			$videoIFrame = $videoContainer.find("iframe"),
 			videoSourceId = $this.attr("data-video"),
 			videoSource = "//www.youtube.com/embed/" + videoSourceId + "?autoplay=1";
-	    $videoIFrame.attr("src", videoSource);
+		$videoIFrame.attr("src", videoSource);
 		$videoContainer.removeClass("hidden");
 	});
 
-	$(".video-container").on("click", function (e) {
+	$(".video-container").on("click", function(e) {
 		var $videoContainer = $(this),
 			$videoIFrame = $videoContainer.find("iframe");
 		$videoIFrame.attr("src", "");
 		$videoContainer.addClass("hidden");
+		return false;
 	});
 
-    $(".video-container iframe").on("click", function(e) {
-        e.preventDefault();
-    });
+	$(".video-container iframe").on("click", function(e) {
+		e.preventDefault();
+	});
 });
