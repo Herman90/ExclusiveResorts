@@ -25,6 +25,7 @@ body * {
 
 .block .blockHeader,
 .block .blockContent,
+.blockContent b,
 .block ul li,
 .download,
 .er-video,
@@ -216,7 +217,6 @@ body * {
 	margin-bottom: 10px;
 	line-height: 30px;
 	font-weight: 700;
-	font-family: 'Verlag A';
 }
 
 .block ul {
