@@ -76,6 +76,7 @@ $(function() {
 		$videoIFrame.attr('src', videoSource);
 		$videoContainer.removeClass('hidden');
 		$htmlAndBody.css('overflow', 'hidden');
+
 		$body.on('touchmove', function(e) {
 			e.preventDefault()
 		})
@@ -86,11 +87,12 @@ $(function() {
 		$videoIFrame.attr('src', '');
 		$videoContainer.addClass('hidden');
 		$htmlAndBody.css('overflow', 'auto');
+
 		$body.off('touchmove');
 		return false;
 	});
 
-	$videoIFrame.on('click, touchmove', function(e) {
-		e.preventDefault();
+	$videoIFrame.on('click touchstart touchmove', function(e) {
+		return false;
 	});
 });
