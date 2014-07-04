@@ -38,7 +38,7 @@ body * {
 
 .block .blockContent,
 .block ul li {
-    font-weight: 200;
+	font-weight: 200;
 }
 
 /*region /*animation*/
@@ -217,16 +217,15 @@ body * {
 }
 
 #overview .blockContent {
-    margin-bottom: 45px;
+	margin-bottom: 45px;
 }
 
 .blockContent b {
 	display: block;
 	font-size: 24px;
-    font-weight: 400;
 	margin-bottom: 10px;
 	line-height: 30px;
-	font-weight: 700;
+	font-weight: 400;
 }
 
 .block ul {
@@ -234,9 +233,8 @@ body * {
 }
 
 .block ul li {
-    font-family: 'Verlag A', 'Verlag B', 'ITC Berkeley Old Style W01';
 	font-size: 18px;
-	line-height: 20px;
+	line-height: 1.2em;
 	color: #3c3c3c;
 }
 
@@ -399,7 +397,8 @@ body * {
 .navbar ul.navbar-nav > li > a:hover,
 .navbar ul.navbar-nav > li.active > a:hover {
 	background-color: #a8cee1;
-	font: normal 16px/14px 'Verlag A';
+	font-size: 16px;
+	line-height: 14px;
 	font-weight: 300;
 	text-transform: uppercase;
 	color: #003151;
@@ -650,20 +649,17 @@ div.close-x {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-    .add-info
-    {
-        width: 256px;
-    }
+	.add-info {
+		width: 256px;
+	}
 
-    .inner-add-info
-    {
-        font-size: 20px;
-    }
+	.inner-add-info {
+		font-size: 20px;
+	}
 
-    .firstWord
-    {
-        font-size: 3.6em;
-    }
+	.firstWord {
+		font-size: 3.6em;
+	}
 
 	/* region /*Blocks*/
 	.blockHeader {
@@ -897,40 +893,41 @@ div.close-x {
 
 	/*endregion*/
 
-    .block.textBlock.description .blockContent,
-    .block.textBlock.description ul li {
-        font-size: 13px;
-        font-weight: 200;
-    }
+	.block.textBlock.description .blockContent,
+	.block.textBlock.description ul li {
+		font-size: 13px;
+		font-weight: 200;
+	}
 
-    .block.textBlock.description .blockHeader {
-        padding-top: 7px;
-    }
+	.block.textBlock.description .blockHeader {
+		padding-top: 7px;
+	}
 
-    .block.textBlock.description .blockContent b {
-        margin: 0;
-        font-size: 14px;
-    }
+	.block.textBlock.description .blockContent b {
+		margin: 0;
+		font-size: 14px;
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-    .block.textBlock.description .blockContent {
-        font-size: 18px;
-    }
-    .block.textBlock.description ul li {
-        font-size: 16px;
-    }
+	.block.textBlock.description .blockContent {
+		font-size: 18px;
+	}
 
-    .block.textBlock.description .blockHeader {
-        padding-top: 15px;
-    }
+	.block.textBlock.description ul li {
+		font-size: 16px;
+	}
 
-    .block.textBlock.description .blockContent b {
-        margin-bottom: 10px;
-        font-size: 20px;
-    }
+	.block.textBlock.description .blockHeader {
+		padding-top: 15px;
+	}
+
+	.block.textBlock.description .blockContent b {
+		margin-bottom: 10px;
+		font-size: 20px;
+	}
 
 	/*region /*Navigation*/
 
