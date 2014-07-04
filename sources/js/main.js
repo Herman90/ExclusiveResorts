@@ -64,22 +64,24 @@ $(function() {
 });
 
 $(function() {
+	var $htmlAndBody = $("html,body"),
+		$videoContainer = $("#videoBlock"),
+		$videoIFrame = $videoContainer.find("iframe");
 
 	$(".er-video, .er-video-img").on("click", function(e) {
 		var $this = $(this),
-			$videoContainer = $("#videoBlock"),
-			$videoIFrame = $videoContainer.find("iframe"),
 			videoSourceId = $this.attr("data-video"),
 			videoSource = "//www.youtube.com/embed/" + videoSourceId + "?autoplay=1";
 		$videoIFrame.attr("src", videoSource);
 		$videoContainer.removeClass("hidden");
+		$htmlAndBody.css("overflow", "hidden");
 	});
 
 	$(".video-container").on("click", function(e) {
-		var $videoContainer = $(this),
-			$videoIFrame = $videoContainer.find("iframe");
+
 		$videoIFrame.attr("src", "");
 		$videoContainer.addClass("hidden");
+		$htmlAndBody.css("overflow", "auto");
 		return false;
 	});
 
