@@ -167,6 +167,32 @@ body * {
 /*max-width: 1140px;*/
 /*}*/
 
+.carousel .carousel-inner .item {
+    background: url('../img/main-content-text.png') no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    padding-bottom: 1px;
+}
+
+    .carousel .carousel-inner .item h1
+    {
+        width: 60%;
+        text-align: center;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 12px;
+        margin: 0 auto;
+    }
+
+    .carousel .carousel-inner .item h2
+    {
+        width: 60%;
+        text-align: center;
+        font-style: italic;
+        font-size: 10px;
+        margin: 10px auto;
+    }
+
 .noPadding {
 	padding-right: 0;
 	padding-left: 0;
@@ -657,8 +683,79 @@ div.close-x {
 
 /*endregion*/
 
+@media (min-width: 340px) {
+    .carousel .carousel-inner .item h1 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .carousel .carousel-inner .item h2 {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 430px) {
+    .carousel .carousel-inner .item h1 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .carousel .carousel-inner .item h2 {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 485px) {
+    .carousel .carousel-inner .item h1 {
+        font-size: 20px;
+        line-height: 20px;
+        margin: 5px auto;
+    }
+
+    .carousel .carousel-inner .item h2 {
+        font-size: 16px;
+        margin: 10px auto;
+    }
+}
+
+@media (min-width: 540px) {
+    .carousel .carousel-inner .item h1 {
+        font-size: 24px;
+        line-height: 24px;
+        margin: 12px auto;
+    }
+
+    .carousel .carousel-inner .item h2 {
+        font-size: 18px;
+        margin: 12px auto;
+    }
+}
+
+@media (min-width: 640px) {
+    .carousel .carousel-inner .item h1 {
+        font-size: 28px;
+        line-height: 24px;
+        margin: 15px auto;
+    }
+
+    .carousel .carousel-inner .item h2 {
+        font-size: 22px;
+        margin: 15px auto;
+    }
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .carousel .carousel-inner .item h1 {
+        font-size: 32px;
+        line-height: 30px;
+        margin: 20px auto;
+    }
+
+    .carousel .carousel-inner .item h2 {
+        font-size: 26px;
+        margin: 20px auto;
+    }
 
 	.no-scroll {
 		left: 50%;
@@ -928,6 +1025,14 @@ div.close-x {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+    .carousel .carousel-inner .item h1 {
+        font-size: 36px;
+    }
+
+    .carousel .carousel-inner .item h2 {
+        font-size: 30px;
+    }
 
 	.no-scroll {
 		margin-left: -485px;
