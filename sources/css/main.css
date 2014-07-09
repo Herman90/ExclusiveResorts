@@ -301,6 +301,13 @@ body * {
 	height: 100%;
 }
 
+.block.half-block > img {
+	height: auto;
+}
+#downloads .block.half-block{
+	height: 173px;
+}
+
 .er-video,
 .er-video-img {
 	cursor: pointer;
@@ -673,10 +680,6 @@ div.close-x {
 
 /*endregion*/
 
-#downloads .block.half-block {
-	height: 175px;
-}
-
 @media (min-width: 340px) {
     .carousel .carousel-inner .item h1 {
         font-size: 16px;
@@ -808,6 +811,7 @@ div.close-x {
 	.block.half-block,
 	.block.half-block.half-block-50 {
 		padding-top: 0;
+		height: auto;
 	}
 
 	.block.half-block > * {
@@ -1080,7 +1084,7 @@ div.close-x {
 
 	.block.small .blockContent {
 		padding: 0 10px;
-		margin: 10px 0 67px;
+		margin: 10px 0 68px;
 		line-height: 20px;
 	}
 
@@ -1225,7 +1229,7 @@ div.close-x {
 	}
 
 	#membership_wrap > .block {
-		height: 308px;
+		height: 307px;
 	}
 
 	#innovation > .block {
