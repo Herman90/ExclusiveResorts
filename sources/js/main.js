@@ -70,12 +70,14 @@ $(function() {
 		$videoIFrame = $videoContainer.find('iframe');
 
 	$('.er-video, .er-video-img').on('click', function(e) {
-		var $this = $(this),
-			videoSourceId = $this.attr('data-video'),
+		var topOfWindow = $(window).scrollTop(),
+			videoSourceId = $(this).attr('data-video'),
 			videoSource = '//www.youtube.com/embed/' + videoSourceId + '?autoplay=1';
 		$videoIFrame.attr('src', videoSource);
 		$videoContainer.removeClass('hidden');
 		$htmlAndBody.addClass('no-scroll');
+
+		$body.css('top', 0 - topOfWindow);
 
 		$body.on('touchmove', function(e) {
 			e.preventDefault()
@@ -83,10 +85,13 @@ $(function() {
 	});
 
 	$videoContainer.on('click', function(e) {
+		var topOfWindow = 0 - parseInt($body.css('top'), 10);
 
 		$videoIFrame.attr('src', '');
 		$videoContainer.addClass('hidden');
+		$body.css('top', 'auto');
 		$htmlAndBody.removeClass('no-scroll');
+		$(window).scrollTop(topOfWindow);
 
 		$body.off('touchmove');
 		return false;
