@@ -275,6 +275,10 @@ body * {
 	height: 100%;
 }
 
+.block.half-block > img {
+	height: auto;
+}
+
 .er-video,
 .er-video-img {
 	cursor: pointer;
@@ -646,10 +650,6 @@ div.close-x {
 }
 
 /*endregion*/
-
-#downloads .block.half-block {
-	height: 175px;
-}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -1120,7 +1120,7 @@ div.close-x {
 	}
 
 	#membership_wrap > .block {
-		height: 308px;
+		height: 307px;
 	}
 
 	#innovation > .block {
