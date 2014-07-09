@@ -278,6 +278,9 @@ body * {
 .block.half-block > img {
 	height: auto;
 }
+#downloads .block.half-block{
+	height: 173px;
+}
 
 .er-video,
 .er-video-img {
@@ -711,6 +714,7 @@ div.close-x {
 	.block.half-block,
 	.block.half-block.half-block-50 {
 		padding-top: 0;
+		height: auto;
 	}
 
 	.block.half-block > * {
