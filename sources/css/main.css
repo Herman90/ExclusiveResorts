@@ -167,9 +167,13 @@ body * {
 /*max-width: 1140px;*/
 /*}*/
 
-.carousel .carousel-inner .item {
+.carousel .carousel-inner {
     background: url('../img/main-content-text.png') no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 90%;
+    background-position: bottom;
+}
+
+.carousel .carousel-inner .item {
     color: #fff;
     padding-bottom: 1px;
 }
