@@ -224,6 +224,13 @@ body * {
 
 .blueBlock {
 	background-color: #a8cee1;
+    width: 100%;
+    position: relative;
+}
+
+.blueBlock p {
+    position: absolute;
+    bottom: 35px;
 }
 
 .grayBlock {
@@ -282,7 +289,7 @@ body * {
 
 .small .blockContent {
 	padding: 0 10px;
-	margin: 10px 0 44px;
+	margin: 10px 0;
 	line-height: 20px;
 }
 
@@ -746,6 +753,11 @@ div.close-x {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+    .blueBlock p {
+        bottom: 25px;
+    }
+
     .carousel .carousel-inner .item h1 {
         font-size: 32px;
         line-height: 30px;
@@ -797,7 +809,6 @@ div.close-x {
 
 	.small .blockContent {
 		padding: 0 5px;
-		margin: 10px 0 52px;
 		line-height: 20px;
 	}
 
@@ -1026,6 +1037,10 @@ div.close-x {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
+    .blueBlock p {
+        bottom: 35px;
+    }
+
     .carousel .carousel-inner .item h1 {
         font-size: 36px;
     }
@@ -1087,7 +1102,6 @@ div.close-x {
 
 	.block.small .blockContent {
 		padding: 0 10px;
-		margin: 10px 0 68px;
 		line-height: 20px;
 	}
 
@@ -1136,7 +1150,7 @@ div.close-x {
 	}
 
 	#financial > .block > .textBlock {
-		height: auto;
+	    height: 137px;
 	}
 
 	#residences > .block {
@@ -1198,7 +1212,6 @@ div.close-x {
 
 	.block.small .blockContent {
 		padding: 0 10px;
-		margin: 14px 0 79px;
 		line-height: 20px;
 	}
 
@@ -1216,7 +1229,7 @@ div.close-x {
 	}
 
 	#financial > .block > .textBlock {
-		height: auto;
+		height: 153px;
 	}
 
 	#residences > .block {
