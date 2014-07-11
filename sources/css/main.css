@@ -168,34 +168,32 @@ body * {
 /*}*/
 
 .carousel .carousel-inner {
-    background: url('../img/main-content-text.png') no-repeat;
-    background-size: 100% 90%;
-    background-position: bottom;
+	background: url('../img/main-content-text.png') no-repeat;
+	background-size: 100% 90%;
+	background-position: bottom;
 }
 
 .carousel .carousel-inner .item {
-    color: #fff;
-    padding-bottom: 1px;
+	color: #fff;
+	padding-bottom: 1px;
 }
 
-    .carousel .carousel-inner .item h1
-    {
-        width: 60%;
-        text-align: center;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 12px;
-        margin: 0 auto;
-    }
+.carousel .carousel-inner .item h1 {
+	width: 60%;
+	text-align: center;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 12px;
+	margin: 0 auto;
+}
 
-    .carousel .carousel-inner .item h2
-    {
-        width: 60%;
-        text-align: center;
-        font-style: italic;
-        font-size: 10px;
-        margin: 10px auto;
-    }
+.carousel .carousel-inner .item h2 {
+	width: 60%;
+	text-align: center;
+	font-style: italic;
+	font-size: 10px;
+	margin: 10px auto;
+}
 
 .noPadding {
 	padding-right: 0;
@@ -228,13 +226,13 @@ body * {
 
 .blueBlock {
 	background-color: #a8cee1;
-    width: 100%;
-    position: relative;
+	width: 100%;
+	position: relative;
 }
 
 .blueBlock p {
-    position: absolute;
-    bottom: 35px;
+	position: absolute;
+	bottom: 35px;
 }
 
 .grayBlock {
@@ -695,83 +693,83 @@ div.close-x {
 /*endregion*/
 
 @media (min-width: 340px) {
-    .carousel .carousel-inner .item h1 {
-        font-size: 16px;
-        line-height: 16px;
-    }
+	.carousel .carousel-inner .item h1 {
+		font-size: 16px;
+		line-height: 16px;
+	}
 
-    .carousel .carousel-inner .item h2 {
-        font-size: 14px;
-    }
+	.carousel .carousel-inner .item h2 {
+		font-size: 14px;
+	}
 }
 
 @media (min-width: 430px) {
-    .carousel .carousel-inner .item h1 {
-        font-size: 18px;
-        line-height: 18px;
-    }
+	.carousel .carousel-inner .item h1 {
+		font-size: 18px;
+		line-height: 18px;
+	}
 
-    .carousel .carousel-inner .item h2 {
-        font-size: 15px;
-    }
+	.carousel .carousel-inner .item h2 {
+		font-size: 15px;
+	}
 }
 
 @media (min-width: 485px) {
-    .carousel .carousel-inner .item h1 {
-        font-size: 20px;
-        line-height: 20px;
-        margin: 5px auto;
-    }
+	.carousel .carousel-inner .item h1 {
+		font-size: 20px;
+		line-height: 20px;
+		margin: 5px auto;
+	}
 
-    .carousel .carousel-inner .item h2 {
-        font-size: 16px;
-        margin: 10px auto;
-    }
+	.carousel .carousel-inner .item h2 {
+		font-size: 16px;
+		margin: 10px auto;
+	}
 }
 
 @media (min-width: 540px) {
-    .carousel .carousel-inner .item h1 {
-        font-size: 24px;
-        line-height: 24px;
-        margin: 12px auto;
-    }
+	.carousel .carousel-inner .item h1 {
+		font-size: 24px;
+		line-height: 24px;
+		margin: 12px auto;
+	}
 
-    .carousel .carousel-inner .item h2 {
-        font-size: 18px;
-        margin: 12px auto;
-    }
+	.carousel .carousel-inner .item h2 {
+		font-size: 18px;
+		margin: 12px auto;
+	}
 }
 
 @media (min-width: 640px) {
-    .carousel .carousel-inner .item h1 {
-        font-size: 28px;
-        line-height: 24px;
-        margin: 15px auto;
-    }
+	.carousel .carousel-inner .item h1 {
+		font-size: 28px;
+		line-height: 24px;
+		margin: 15px auto;
+	}
 
-    .carousel .carousel-inner .item h2 {
-        font-size: 22px;
-        margin: 15px auto;
-    }
+	.carousel .carousel-inner .item h2 {
+		font-size: 22px;
+		margin: 15px auto;
+	}
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-    .blueBlock p {
-        bottom: 25px;
-    }
+	.blueBlock p {
+		bottom: 25px;
+	}
 
-    .carousel .carousel-inner .item h1 {
-        font-size: 32px;
-        line-height: 30px;
-        margin: 20px auto;
-    }
+	.carousel .carousel-inner .item h1 {
+		font-size: 32px;
+		line-height: 30px;
+		margin: 20px auto;
+	}
 
-    .carousel .carousel-inner .item h2 {
-        font-size: 26px;
-        margin: 20px auto;
-    }
+	.carousel .carousel-inner .item h2 {
+		font-size: 26px;
+		margin: 20px auto;
+	}
 
 	.no-scroll {
 		left: 50%;
@@ -1041,17 +1039,17 @@ div.close-x {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-    .blueBlock p {
-        bottom: 35px;
-    }
+	.blueBlock p {
+		bottom: 35px;
+	}
 
-    .carousel .carousel-inner .item h1 {
-        font-size: 36px;
-    }
+	.carousel .carousel-inner .item h1 {
+		font-size: 36px;
+	}
 
-    .carousel .carousel-inner .item h2 {
-        font-size: 30px;
-    }
+	.carousel .carousel-inner .item h2 {
+		font-size: 30px;
+	}
 
 	.no-scroll {
 		margin-left: -485px;
@@ -1154,7 +1152,7 @@ div.close-x {
 	}
 
 	#financial > .block > .textBlock {
-	    height: 137px;
+		height: 137px;
 	}
 
 	#residences > .block {
@@ -1224,24 +1222,28 @@ div.close-x {
 	/*region /*Overview, Financial, Residences*/
 	#overview > .block,
 	#financial > .block {
+		height: 364px;
+	}
+
+	#financial > .block {
 		height: 340px;
 	}
 
 	#overview > .block > .block,
 	#financial > .block > .block {
-		height: 187px;
+		height: 183px;
 	}
 
 	#financial > .block > .textBlock {
-		height: 154px;
+		height: 158px;
 	}
 
 	#residences > .block {
-		height: 554px;
+		height: 578px;
 	}
 
 	#residences > .block > .block {
-		height: 181px;
+		height: 183px;
 	}
 
 	#residences > .block > .textBlock {
@@ -1249,7 +1251,11 @@ div.close-x {
 	}
 
 	#membership_wrap > .block {
-		height: 307px;
+		height: 363px;
+	}
+
+	#membership_wrap > .block > .block {
+		height: 182px;
 	}
 
 	#innovation > .block {
@@ -1257,8 +1263,8 @@ div.close-x {
 	}
 
 	#downloads > .block,
-	#downloads > .block> .block {
-		height: 180px;
+	#downloads > .block > .block {
+		height: 183px;
 	}
 
 	/*endregion*/
